@@ -13,6 +13,9 @@ pnpm-debug.log*
 coverage/
 *.lcov
 
+# Sonar scanner
+.scannerwork/
+
 # Build outputs
 /dist
 /build

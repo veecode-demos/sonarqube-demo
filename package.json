@@ -9,7 +9,7 @@
     "deps:upgrade": "npx -y npm-check-updates@latest -u && npm install",
     "lint": "eslint \"src/**/*.js\" \"test/**/*.js\"",
     "lint:fix": "npm run lint -- --fix",
-    "sonar:scan": "npx -y sonar-scanner -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info"
+    "sonar:scan": "npx -y sonar-scanner -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=${SONAR_ORG} -Dsonar.projectKey=${SONAR_PROJECT_KEY} -Dsonar.token=${SONAR_TOKEN} -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
